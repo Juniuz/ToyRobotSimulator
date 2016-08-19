@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RobotSimulator.Model;
-using BauerXcel.Media.RobotSimulator.EnumTypes;
+using BauerXcel.Media.RobotSimulator.model;
+using BauerXcel.Media.RobotSimulator.common.EnumTypes;
 
 namespace ToyRobotUnitTest
 {

@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A968F00F-82CD-41A8-8B1F-77BA3F7957BA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{3577E993-555B-44D1-9CF8-FA86F1EE426B}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BauerXcel.Media.RobotSimulator</RootNamespace>
-    <AssemblyName>RobotSimulator</AssemblyName>
+    <RootNamespace>BauerXcel.Media.RobotSimulator.model</RootNamespace>
+    <AssemblyName>RobotSimulator.model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,20 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="ToyRobot.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RobotSimulator.common\RobotSimulator.common.csproj">
       <Project>{39dd34b9-a8f7-4a89-b7cd-ceb3c13a141c}</Project>
       <Name>RobotSimulator.common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RobotSimulator.model\RobotSimulator.model.csproj">
-      <Project>{3577e993-555b-44d1-9cf8-fa86f1ee426b}</Project>
-      <Name>RobotSimulator.model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BauerXcel.Media.RobotSimulator.EnumTypes
+namespace BauerXcel.Media.RobotSimulator.common.EnumTypes
 {
     /// <summary>
     /// Determines the instruction given to the toy robot

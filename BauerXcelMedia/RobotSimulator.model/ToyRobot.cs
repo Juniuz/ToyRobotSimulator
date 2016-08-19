@@ -1,11 +1,11 @@
-﻿using BauerXcel.Media.RobotSimulator.EnumTypes;
+﻿using BauerXcel.Media.RobotSimulator.common.EnumTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotSimulator.Model
+namespace BauerXcel.Media.RobotSimulator.model
 {
     /// <summary>
     /// This class define the structure of toy robot.
