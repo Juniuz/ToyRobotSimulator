@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumTypes\Command.cs" />
+    <Compile Include="EnumTypes\Direction.cs" />
     <Compile Include="EnumTypes\Position.cs" />
     <Compile Include="Model\ToyRobot.cs" />
     <Compile Include="Program.cs" />
