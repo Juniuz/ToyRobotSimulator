@@ -7,8 +7,8 @@
     <ProjectGuid>{F0EB4D54-3C2D-4799-A164-12C7DAEC7951}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BauerXcel.Media.RobotSimulator.interface</RootNamespace>
-    <AssemblyName>RobotSimulator.@interface</AssemblyName>
+    <RootNamespace>BauerXcel.Media.RobotSimulator.Interface</RootNamespace>
+    <AssemblyName>RobotSimulator.Interface</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IInstruction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobotUnitTest", "ToyRobo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotSimulator.model", "RobotSimulator.model\RobotSimulator.model.csproj", "{3577E993-555B-44D1-9CF8-FA86F1EE426B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotSimulator.interface", "RobotSimulator.interface\RobotSimulator.interface.csproj", "{F0EB4D54-3C2D-4799-A164-12C7DAEC7951}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotSimulator.Interface", "RobotSimulator.interface\RobotSimulator.Interface.csproj", "{F0EB4D54-3C2D-4799-A164-12C7DAEC7951}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotSimulator.common", "RobotSimulator.common\RobotSimulator.common.csproj", "{39DD34B9-A8F7-4A89-B7CD-CEB3C13A141C}"
 EndProject
