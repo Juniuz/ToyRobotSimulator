@@ -11,18 +11,18 @@ namespace BauerXcel.Media.RobotSimulator
 {
     public class GridCell: IGrid
     {
-        private int _rows;
-        private int _columns;
+        public int Rows { get; set; }
+        public int Columns { get; set; }
 
         public GridCell(int rows, int columns)
         {
-            this._rows = rows;
-            this._columns = columns;
+            Rows = rows;
+            Columns = columns;
         }
 
-        public bool isValidPosition(Position position)
+        public virtual bool isValidPosition(Position position)
         {
-            return !(position.GetX() > _columns || position.GetX() < 0 || position.GetY() > _rows || position.GetY() < 0);
+            return !(position.GetX() > Columns || position.GetX() < 0 || position.GetY() > Rows || position.GetY() < 0);
         }
     }
 }

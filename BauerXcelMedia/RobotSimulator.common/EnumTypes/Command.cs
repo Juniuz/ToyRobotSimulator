@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 namespace BauerXcel.Media.RobotSimulator.common.EnumTypes
 {
     /// <summary>
-    /// Determines the instruction given to the toy robot
+    /// Determines the command given to the toy robot
     /// </summary>
-    public enum Command : byte
+    public enum Command
     {
-        Invalid = 0,
-        Place = 1,
-        Left = 2,
-        Right = 3,
-        Move = 4,
-        Report = 5
+        Place,
+        Move,
+        Left,
+        Right,
+        Report
     }
 }
