@@ -16,14 +16,14 @@ namespace ToyRobotUnitTest
             var toyRobot = new ToyRobot();
 
             //Act
-            var result = toyRobot.Location(-1, 0, Position.East);
+            var result = toyRobot.Location(-1, 0, Facing.East);
 
             //Assert
             Assert.IsFalse(result);
             Assert.AreEqual("Toy robot cannot be placed in East", toyRobot.ErrorMessage);
 
             //Act
-            result = toyRobot.Location(3, 5, Position.East);
+            result = toyRobot.Location(3, 5, Facing.East);
 
             //Assert
             Assert.IsFalse(result);
@@ -79,7 +79,7 @@ namespace ToyRobotUnitTest
         {
             //Arrange
             var toyRobot = new ToyRobot();
-            var result = toyRobot.Location(2, 4, Position.West);
+            var result = toyRobot.Location(2, 4, Facing.West);
             var report = toyRobot.Report();
 
             //Assert
@@ -95,7 +95,7 @@ namespace ToyRobotUnitTest
             var toyRobot = new ToyRobot();
 
             //Act
-            toyRobot.Location(1, 1, Position.North);
+            toyRobot.Location(1, 1, Facing.North);
             toyRobot.Move();
 
             //Assert
@@ -109,7 +109,7 @@ namespace ToyRobotUnitTest
             var toyRobot = new ToyRobot();
 
             //Act
-            toyRobot.Location(1, 1, Position.South);
+            toyRobot.Location(1, 1, Facing.South);
             toyRobot.TurnLeft();
 
             //Assert
@@ -123,7 +123,7 @@ namespace ToyRobotUnitTest
             var toyRobot = new ToyRobot();
 
             //Act
-            toyRobot.Location(1, 1, Position.East);
+            toyRobot.Location(1, 1, Facing.East);
             toyRobot.TurnRight();
 
             //Assert
@@ -137,7 +137,7 @@ namespace ToyRobotUnitTest
             var toyRobot = new ToyRobot();
 
             //Act
-            toyRobot.Location(1, 1, Position.North);
+            toyRobot.Location(1, 1, Facing.North);
             toyRobot.Move();
 
             //Assert
@@ -151,7 +151,7 @@ namespace ToyRobotUnitTest
             var toyRobot = new ToyRobot();
 
             //Act
-            toyRobot.Location(4, 5, Position.West);
+            toyRobot.Location(4, 5, Facing.West);
             toyRobot.Move();
             toyRobot.Move();
             toyRobot.TurnLeft();

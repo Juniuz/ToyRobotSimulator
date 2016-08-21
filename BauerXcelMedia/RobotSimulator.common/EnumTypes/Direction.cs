@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace BauerXcel.Media.RobotSimulator.common.EnumTypes
 {
     /// <summary>
-    /// The left and right direction of the toy robot
+    /// Determines the movement of toy robot to left or right direction
     /// </summary>
-    public enum Direction
+    public enum Direction : int
     {
         Left = 1,
         Right = -1

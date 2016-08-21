@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GridCell.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToyRobotController.cs" />
@@ -53,6 +54,10 @@
     <ProjectReference Include="..\RobotSimulator.common\RobotSimulator.common.csproj">
       <Project>{39dd34b9-a8f7-4a89-b7cd-ceb3c13a141c}</Project>
       <Name>RobotSimulator.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RobotSimulator.interface\RobotSimulator.Interface.csproj">
+      <Project>{f0eb4d54-3c2d-4799-a164-12c7daec7951}</Project>
+      <Name>RobotSimulator.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="..\RobotSimulator.model\RobotSimulator.model.csproj">
       <Project>{3577e993-555b-44d1-9cf8-fa86f1ee426b}</Project>

@@ -9,7 +9,7 @@ namespace BauerXcel.Media.RobotSimulator.common.EnumTypes
     /// <summary>
     /// Determines the facing position of the toy robot
     /// </summary>
-    public enum Position : byte
+    public enum Facing : byte
     {
         North = 1,
         South = 2,

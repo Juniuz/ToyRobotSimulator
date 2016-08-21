@@ -39,14 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IInstruction.cs" />
+    <Compile Include="IGrid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RobotSimulator.common\RobotSimulator.common.csproj">
-      <Project>{39dd34b9-a8f7-4a89-b7cd-ceb3c13a141c}</Project>
-      <Name>RobotSimulator.common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RobotSimulator.model\RobotSimulator.model.csproj">
       <Project>{3577e993-555b-44d1-9cf8-fa86f1ee426b}</Project>
       <Name>RobotSimulator.model</Name>

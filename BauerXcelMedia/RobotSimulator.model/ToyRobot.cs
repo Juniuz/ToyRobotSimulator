@@ -22,7 +22,7 @@ namespace BauerXcel.Media.RobotSimulator.model
             ErrorMessage = string.Empty;
         }
 
-        public bool Location(int x, int y, Position position)
+        public bool Location(int x, int y, Facing position)
         {
 
             return true;
