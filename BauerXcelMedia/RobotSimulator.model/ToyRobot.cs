@@ -12,8 +12,6 @@ namespace BauerXcel.Media.RobotSimulator.model
     /// </summary>
     public class ToyRobot
     {
-        private int _posX;
-        private int _postY;
         private Position _position;
 
         public string ErrorMessage { get; set; }
@@ -30,12 +28,42 @@ namespace BauerXcel.Media.RobotSimulator.model
 
         public bool Location(int x, int y, Facing position)
         {
-
             return true;
         }
 
-        public bool Move()
+        /// <summary>
+        /// Moves the robot one unit forward in the direction it is currently facing
+        /// </summary>
+        /// <returns>true if moved successfully, otherwise false</returns>
+        public bool Move(Position newPosition)
         {
+            if (newPosition == null)
+                return false;
+            
+            //change position
+            _position = newPosition;
+            return true;
+        }
+
+        /// <summary>
+        /// Get the toy robot position
+        /// </summary>
+        /// <returns>Returns the toy robot position</returns>
+        public Position GetPosition()
+        {
+            return _position;
+        }
+
+        /// <summary>
+        /// Set the toy robot position
+        /// </summary>
+        /// <returns>true if set successfully, if not false</returns>
+        public bool SetPosition(Position position)
+        {
+            if (position == null)
+                return false;
+
+            _position = position;
             return true;
         }
 
@@ -48,7 +76,7 @@ namespace BauerXcel.Media.RobotSimulator.model
             if (_position.direction == null)
                 return false;
 
-            _position.direction = _position.direction.LeftDirection();
+            //_position.direction = _position.direction.LeftDirection();
             return true;
         }
 
@@ -61,12 +89,7 @@ namespace BauerXcel.Media.RobotSimulator.model
             if (_position.direction == null)
                 return false;
 
-            _position.direction = _position.direction.RightDirection();
-            return true;
-        }
-
-        public bool Turn()
-        {
+            //_position.direction = _position.direction.RightDirection();
             return true;
         }
 
