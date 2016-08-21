@@ -11,9 +11,9 @@ namespace BauerXcel.Media.RobotSimulator.common.EnumTypes
     /// </summary>
     public enum Facing : byte
     {
-        North = 1,
+        North = 0,
+        East = 1,
         South = 2,
-        East = 3,
-        West = 4
+        West = 3
     }
 }

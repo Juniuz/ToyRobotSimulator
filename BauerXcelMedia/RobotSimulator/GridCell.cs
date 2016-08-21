@@ -22,7 +22,7 @@ namespace BauerXcel.Media.RobotSimulator
 
         public bool isValidPosition(Position position)
         {
-            return !(position.GetX > _columns || position.GetX < 0 || position.GetY > _rows || position.GetY < 0);
+            return !(position.GetX() > _columns || position.GetX() < 0 || position.GetY() > _rows || position.GetY() < 0);
         }
     }
 }
